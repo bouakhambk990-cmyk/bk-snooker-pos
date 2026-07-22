@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="lo">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ຄູ່ມືຕິດຕັ້ງ BK Snooker POS — GitHub Pages</title>
+<style>
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:'Noto Sans Lao',Arial,sans-serif;background:#0a0f0a;color:#e2e8e2;min-height:100vh;padding:20px}
+  .container{max-width:780px;margin:0 auto}
+  h1{text-align:center;font-size:26px;color:#4ade80;margin:24px 0 6px}
+  .subtitle{text-align:center;color:#6b7280;font-size:13px;margin-bottom:32px}
+  .step-card{background:#111a11;border:1px solid #1f3a1f;border-radius:16px;padding:20px 24px;margin-bottom:16px;position:relative}
+  .step-num{position:absolute;top:-14px;left:20px;background:#16a34a;color:#fff;font-size:12px;font-weight:700;padding:3px 12px;border-radius:999px}
+  .step-title{font-size:16px;font-weight:700;color:#4ade80;margin-bottom:10px;padding-top:4px}
+  .step-body{font-size:13px;color:#d1fae5;line-height:1.7}
+  .step-body b{color:#fff}
+  .cmd{background:#0d1a0d;border:1px solid #22c55e;border-radius:8px;padding:10px 14px;font-family:monospace;font-size:13px;color:#86efac;margin:8px 0;word-break:break-all}
+  .img-placeholder{background:#0d1a0d;border:1px dashed #22c55e33;border-radius:10px;padding:16px;text-align:center;color:#4ade80;font-size:12px;margin:10px 0}
+  .badge{display:inline-block;padding:2px 10px;border-radius:999px;font-size:11px;font-weight:700;margin:2px}
+  .badge-green{background:#14532d;color:#4ade80}
+  .badge-blue{background:#1e3a5f;color:#93c5fd}
+  .badge-yellow{background:#451a03;color:#fbbf24}
+  .tip{background:#0d2a0d;border-left:3px solid #22c55e;padding:8px 12px;border-radius:0 8px 8px 0;font-size:12px;color:#86efac;margin:8px 0}
+  .warn{background:#2a1a0d;border-left:3px solid #f59e0b;padding:8px 12px;border-radius:0 8px 8px 0;font-size:12px;color:#fcd34d;margin:8px 0}
+  .divider{border:none;border-top:1px solid #1f3a1f;margin:8px 0}
+  .btn-link{display:inline-block;background:#16a34a;color:#fff;text-decoration:none;padding:10px 24px;border-radius:10px;font-weight:700;font-size:14px;margin-top:8px}
+  .final-box{background:#0d2a0d;border:2px solid #22c55e;border-radius:16px;padding:20px;text-align:center;margin-top:24px}
+  .final-box h2{color:#4ade80;font-size:20px;margin-bottom:8px}
+  .url-box{background:#050e05;border:1px solid #22c55e;border-radius:10px;padding:12px;font-family:monospace;font-size:15px;color:#86efac;margin:10px 0;word-break:break-all}
+  ul{padding-left:18px;margin:6px 0}
+  li{margin-bottom:4px}
+  table{width:100%;border-collapse:collapse;margin:10px 0}
+  th{background:#16a34a;color:#fff;padding:8px;font-size:12px}
+  td{border:1px solid #1f3a1f;padding:8px;font-size:12px;vertical-align:top}
+  @media(max-width:500px){.container{padding:0 2px}h1{font-size:20px}}
+</style>
+</head>
+<body>
+<div class="container">
+
+  <h1>🎱 BK Snooker POS V4</h1>
+  <p class="subtitle">ຄູ່ມືຕິດຕັ້ງໃນ GitHub Pages — ທຸກຂັ້ນຕອນ</p>
+
+  <!-- STEP 1 -->
+  <div class="step-card">
+    <div class="step-num">ຂັ້ນຕອນທີ 1</div>
+    <div class="step-title">🔑 ສ້າງ GitHub Account (ຖ້າຍັງບໍ່ມີ)</div>
+    <div class="step-body">
+      <p>1. ໄປທີ່ <b>github.com</b> → ກົດ <b>"Sign up"</b></p>
+      <p>2. ໃສ່ Email, Password, Username</p>
+      <p>3. Verify email → Login</p>
+      <div class="tip">💡 Username ຈະກາຍເປັນສ່ວນໜຶ່ງຂອງ URL: <code>github.com/USERNAME</code></div>
+    </div>
+  </div>
+
+  <!-- STEP 2 -->
+  <div class="step-card">
+    <div class="step-num">ຂັ້ນຕອນທີ 2</div>
+    <div class="step-title">📁 ສ້າງ Repository ໃໝ່</div>
+    <div class="step-body">
+      <p>1. Login GitHub → ກົດ <b>"+"</b> ດ້ານຂວາເທິງ → <b>"New repository"</b></p>
+      <p>2. ຕັ້ງຄ່າດັ່ງນີ້:</p>
+      <div class="img-placeholder">
+        <table>
+          <tr><th>Field</th><th>ຄ່າທີ່ຕ້ອງໃສ່</th></tr>
+          <tr><td>Repository name</td><td><code>bk-snooker-pos</code></td></tr>
+          <tr><td>Description</td><td>BK Snooker Club POS System</td></tr>
+          <tr><td>Visibility</td><td>✅ <b>Public</b> (ຕ້ອງ Public ຈຶ່ງໃຊ້ Pages ຟຣີ)</td></tr>
+          <tr><td>Initialize README</td><td>❌ ບໍ່ຕ້ອງ tick</td></tr>
+        </table>
+      </div>
+      <p>3. ກົດ <b>"Create repository"</b> (ສີຂຽວ)</p>
+    </div>
+  </div>
+
+  <!-- STEP 3 -->
+  <div class="step-card">
+    <div class="step-num">ຂັ້ນຕອນທີ 3</div>
+    <div class="step-title">⬆️ Upload ໄຟລ໌ທັງໝົດ</div>
+    <div class="step-body">
+      <p>ໃນ repository ທີ່ສ້າງໃໝ່ → ກົດ <b>"uploading an existing file"</b></p>
+      <hr class="divider">
+      <p><b>ໄຟລ໌ທີ່ຕ້ອງ upload (ທັງໝົດ 3 ອັນ):</b></p>
+      <ul>
+        <li>📄 <b>index.html</b> — ຕົວ App ຫຼັກ</li>
+        <li>📋 <b>README.md</b> — ຄຳອະທິບາຍ</li>
+        <li>📁 <b>.github/workflows/deploy.yml</b> — Auto-deploy</li>
+      </ul>
+      <div class="warn">⚠️ ໄຟລ໌ <code>.github/workflows/deploy.yml</code> ຕ້ອງ upload ໂດຍສ້າງ folder ກ່ອນ (ເບິ່ງຂັ້ນຕອນລຸ່ມ)</div>
+      <hr class="divider">
+      <p><b>ວິທີ upload deploy.yml:</b></p>
+      <p>1. ໃນ repo → ກົດ <b>"Add file"</b> → <b>"Create new file"</b></p>
+      <p>2. ໃນຊ່ອງ "Name your file" ໃສ່:</p>
+      <div class="cmd">.github/workflows/deploy.yml</div>
+      <p>3. Copy ເນື້ອໃນ deploy.yml ວາງໃສ່</p>
+      <p>4. ກົດ <b>"Commit new file"</b></p>
+    </div>
+  </div>
+
+  <!-- STEP 4 -->
+  <div class="step-card">
+    <div class="step-num">ຂັ້ນຕອນທີ 4</div>
+    <div class="step-title">⚙️ ເປີດ GitHub Pages</div>
+    <div class="step-body">
+      <p>1. ໄປ <b>Settings</b> (tab ເທິງ repository)</p>
+      <p>2. ເລື່ອນລົງ → ກົດ <b>"Pages"</b> (ຊ້າຍມື)</p>
+      <p>3. ໃຕ້ <b>"Source"</b> → ເລືອກ:</p>
+      <div class="img-placeholder">
+        <table>
+          <tr><th>Option</th><th>ຄ່າ</th></tr>
+          <tr><td>Source</td><td>Deploy from a branch</td></tr>
+          <tr><td>Branch</td><td>main</td></tr>
+          <tr><td>Folder</td><td>/ (root)</td></tr>
+        </table>
+      </div>
+      <p>4. ກົດ <b>"Save"</b></p>
+      <p>5. ລໍຖ້າ <b>1-3 ນາທີ</b> → refresh ໜ້ານີ້</p>
+      <div class="tip">💡 ຈະເຫັນ banner ສີຟ້າ "Your site is live at..." ເມື່ອ deploy ສຳເລັດ</div>
+    </div>
+  </div>
+
+  <!-- STEP 5 -->
+  <div class="step-card">
+    <div class="step-num">ຂັ້ນຕອນທີ 5</div>
+    <div class="step-title">✅ ທົດສອບ ແລະ ໃຊ້ງານ</div>
+    <div class="step-body">
+      <p>ເປີດ link:</p>
+      <div class="cmd">https://YOUR_USERNAME.github.io/bk-snooker-pos/</div>
+      <p>(ປ່ຽນ YOUR_USERNAME ເປັນ GitHub username ຂອງທ່ານ)</p>
+      <hr class="divider">
+      <p><b>Login ຄັ້ງທຳອິດ:</b></p>
+      <table>
+        <tr><th>Role</th><th>Username</th><th>Password</th></tr>
+        <tr><td>Admin</td><td>admin</td><td>admin123</td></tr>
+        <tr><td>Staff</td><td>staff</td><td>staff123</td></tr>
+      </table>
+      <div class="warn">⚠️ ປ່ຽນລະຫັດທັນທີ! Settings → ຕັ້ງລະຫັດຜ່ານໃໝ່</div>
+    </div>
+  </div>
+
+  <!-- IMPORTANT NOTES -->
+  <div class="step-card">
+    <div class="step-num">⚠️ ສຳຄັນ</div>
+    <div class="step-title">ຂໍ້ຄວນຮູ້ກ່ຽວກັບ localStorage</div>
+    <div class="step-body">
+      <table>
+        <tr><th>ສິ່ງທີ່ຕ້ອງຮູ້</th><th>ຄຳອະທິບາຍ</th></tr>
+        <tr>
+          <td>ຂໍ້ມູນຢູ່ browser</td>
+          <td>ຂໍ້ມູນເກັບໃນ browser ຂອງ device ນັ້ນ — ຄົນລະ device = ຄົນລະຂໍ້ມູນ</td>
+        </tr>
+        <tr>
+          <td>Clear cache = ຂໍ້ມູນຫາຍ</td>
+          <td>ຢ່າ clear browser data — Backup JSON ທຸກວັນ</td>
+        </tr>
+        <tr>
+          <td>Incognito mode</td>
+          <td>ຢ່າໃຊ້ — ຂໍ້ມູນຈະຫາຍທຸກຄັ້ງທີ່ປິດ window</td>
+        </tr>
+        <tr>
+          <td>ໃຊ້ browser ດຽວ</td>
+          <td>ໃຊ້ Chrome ຫຼື Safari ດຽວກັນຕະຫຼອດ</td>
+        </tr>
+        <tr>
+          <td>ຈຳກັດ 5-10MB</td>
+          <td>Backup ແລ້ວ clear ຂໍ້ມູນເກົ່າຖ້າໃຊ້ດົນ</td>
+        </tr>
+      </table>
+      <hr class="divider">
+      <p><b>📦 Backup ຖືກຕ້ອງ:</b></p>
+      <ul>
+        <li>Auto-backup ທຸກ 30 ນາທີ (ອັດຕະໂນມັດ)</li>
+        <li>Manual: Settings → ⬇️ Backup (JSON) — ເຮັດທຸກວັນ</li>
+        <li>ເກັບໄຟລ໌ backup ໃນ Google Drive / USB</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- UPDATE -->
+  <div class="step-card">
+    <div class="step-num">🔄 Update</div>
+    <div class="step-title">ອັບເດດເວີຊັນໃໝ່</div>
+    <div class="step-body">
+      <p>ເມື່ອໄດ້ index.html ໃໝ່ ຈາກ Claude:</p>
+      <p>1. ໄປ GitHub repository</p>
+      <p>2. ກົດ <b>index.html</b> → ກົດ ✏️ (edit)</p>
+      <p>3. ລຶບເນື້ອໃນທັງໝົດ → Paste ໃໝ່</p>
+      <p>4. ກົດ <b>"Commit changes"</b></p>
+      <p>5. ລໍຖ້າ 1 ນາທີ → ໜ້າ deploy ອັດຕະໂນມັດ</p>
+      <div class="tip">💡 ຂໍ້ມູນໃນ localStorage ຍັງຢູ່ຄົບ — ບໍ່ຫາຍ</div>
+    </div>
+  </div>
+
+  <!-- CUSTOM DOMAIN -->
+  <div class="step-card">
+    <div class="step-num">🌐 Optional</div>
+    <div class="step-title">ໃຊ້ Domain ຕົວເອງ (ຖ້າຕ້ອງການ)</div>
+    <div class="step-body">
+      <p>ຖ້າຕ້ອງການ URL ສວຍ ເຊັ່ນ <code>pos.bksnooker.com</code>:</p>
+      <p>1. ຊື້ domain (GoDaddy, Namecheap...)</p>
+      <p>2. Settings → Pages → Custom domain → ໃສ່ domain</p>
+      <p>3. ຕັ້ງ DNS CNAME: <code>YOUR_USERNAME.github.io</code></p>
+      <div class="tip">💡 ຖ້າບໍ່ຕ້ອງການ domain → ໃຊ້ github.io link ຟຣີໄດ້ເລີຍ</div>
+    </div>
+  </div>
+
+  <!-- FINAL -->
+  <div class="final-box">
+    <h2>🎉 ພ້ອມໃຊ້ງານ!</h2>
+    <p style="color:#86efac;font-size:13px;margin-bottom:10px;">Link ຂອງທ່ານຈະເປັນ:</p>
+    <div class="url-box">https://YOUR_USERNAME.github.io/bk-snooker-pos/</div>
+    <p style="color:#6b7280;font-size:12px;margin-top:12px;">
+      Share link ນີ້ໃຫ້ພະນັກງານ — ເປີດໄດ້ທຸກ device ທີ່ມີ internet<br>
+      ຂໍ້ມູນເກັບໃນ device ນັ້ນ — Backup ທຸກວັນ
+    </p>
+  </div>
+
+  <p style="text-align:center;color:#374151;font-size:11px;margin-top:20px;padding-bottom:20px;">
+    BK Snooker Club POS V4 | ສ້າງດ້ວຍ Claude AI
+  </p>
+</div>
+</body>
+</html>
